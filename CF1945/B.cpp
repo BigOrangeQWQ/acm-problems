@@ -12,11 +12,20 @@ using namespace std;
 #define endl '\n'
 #define int long long
 
-using PII = pair<int, int>;
-using LL = long long;
+// int gcd(int a, int b) {
+//     return !b ? a : gcd(b, a % b);
+// }
+
+int gcd(int a, int b) { return b == 0 ? a : gcd(b, a % b); }
+
+int lcm(int a, int b) {
+    return a / gcd(a, b) * b;
+}
 
 void solve() {
-    
+    int n, m, k;
+    cin >> n >> m >> k;
+    cout << 2 + k / n + k / m << endl;
 
 }
 

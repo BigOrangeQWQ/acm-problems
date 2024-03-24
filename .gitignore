@@ -1,3 +1,10 @@
+
+# CPP executables
 *.bin
 
+# Vscode
 .vscode/
+
+# CPH
+*.prob
+.cph/

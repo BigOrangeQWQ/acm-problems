@@ -5,6 +5,7 @@
 #include <set>
 
 
+
 using namespace std;
 
 #define x first
@@ -13,12 +14,24 @@ using namespace std;
 #define int long long
 
 using PII = pair<int, int>;
-using LL = long long;
 
 void solve() {
+    int n; cin >> n;
+    vector<int> p(n + 1);
+    for(int i = 1; i <= n; i++) 
+        cin >> p[i];
     
+    sort(p.begin() + 1, p.end());
+    int mid = (n + 1) / 2;
+    int res = 1;
+    for(int i = mid+1; i <= n; i++) {
+        if(p[i] == p[mid])
+            res++;
+    }
+    cout << res << endl;
 
 }
+// 4 5 6 6 6
 
 signed main() {
     int T;cin >> T;
