@@ -46,7 +46,7 @@ void solve() {
 
     }
     if(sumc < 0)
-        cout <<  mod(sumc, MOD)  << endl;
+        cout <<  mod(sumc, MOD) % MOD  << endl;
     else 
         cout << sumc % MOD << endl;
     //cout << mod(sumc, MOD) % MOD << endl;
@@ -58,4 +58,7 @@ signed main() {
     while(T --> 0) {
         solve();
     }
+
+
 }
+
