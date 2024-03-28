@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 .vscode/
 
 .cph/
@@ -6,3 +7,14 @@
 *.bin
 
 output/
+=======
+# CPP executables
+*.bin
+
+# Vscode
+.vscode/
+
+# CPH
+*.prob
+.cph/
+>>>>>>> 087bb8604c0ca260f64bc62852fd352150b5ba22
