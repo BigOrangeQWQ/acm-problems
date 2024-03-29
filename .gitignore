@@ -8,3 +8,5 @@
 # CPH
 *.prob
 .cph/
+
+output/
