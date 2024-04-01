@@ -2,7 +2,6 @@
 #include <algorithm>
 #include <vector>
 #include <queue>
-#include <map>
 #include <set>
 
 
@@ -14,11 +13,20 @@ using namespace std;
 // #define int long long
 
 using PII = pair<int, int>;
-
 using LL = long long;
 
 void solve() {
-    
+    // int i = 0, j = 0;
+    // for(i = 0, j = 1; i < (1ll << 31) - 1; j ++ , i += j) {}
+    // cout << j << endl;
+    // LL b = 1;
+    // b <<= 31;
+    // b -- ;
+    // for(i = 0, j = 1; i < b; j++, i = (1 + j) / 2 * j) {
+    //     cout << j << ' ' << i << endl;
+    // }
+    // cout << j << endl;
+
 }
 
 signed main() {
