@@ -1,12 +1,18 @@
 
-# CPP executables
+.vscode/
+
+.cph/
+
 *.bin
 
-# Vscode
-.vscode/
+output/
+# CPP executables
 
 # CPH
 *.prob
+<<<<<<< HEAD
+=======
 .cph/
 
 output/
+>>>>>>> 4ee86fac2d53568a3b33a5198afd6ad5f9d88c97

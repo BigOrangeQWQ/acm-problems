@@ -1,10 +1,17 @@
 #include <iostream>
+<<<<<<< HEAD
+=======
 #include <iostream>
+>>>>>>> 4ee86fac2d53568a3b33a5198afd6ad5f9d88c97
 #include <algorithm>
 #include <vector>
 #include <queue>
 #include <set>
+<<<<<<< HEAD
+
+=======
 #include <map>
+>>>>>>> 4ee86fac2d53568a3b33a5198afd6ad5f9d88c97
 
 using namespace std;
 
@@ -17,6 +24,9 @@ using PII = pair<int, int>;
 using LL = long long;
 
 void solve() {
+<<<<<<< HEAD
+    
+=======
     int n; cin >> n;
     vector<string> g(n), w(n);
     for(int i = 0; i < n;i ++) {
@@ -52,6 +62,7 @@ void solve() {
     }
 
     cout << n - ans << endl;
+>>>>>>> 4ee86fac2d53568a3b33a5198afd6ad5f9d88c97
 }
 
 signed main() {
