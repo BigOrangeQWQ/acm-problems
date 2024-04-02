@@ -42,6 +42,7 @@ int dfs(int u) {
     return dis[u];
 }
 
+
 void solve() {
     int n; cin >> n;
     for(int i = 1; i <= n; i++) {
