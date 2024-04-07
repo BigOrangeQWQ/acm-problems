@@ -1,15 +1,17 @@
-
+# Vscode settings
 .vscode/
 
+# CPH extensions
 .cph/
-
-*.bin
-
-output/
-# CPP executables
-
-# CPH
 *.prob
+<<<<<<< HEAD
 .cph/
 
 output/
+=======
+
+# CPP executables
+*.exe
+*.bin
+output/
+>>>>>>> 05d0c755d163877402038a33beeeda6d71b26a4b
