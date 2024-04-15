@@ -34,9 +34,8 @@ bool check(int x) {
 }
 
 
-omg() {
-    return 10;
-}
+
+
 void solve() {
     cin >> n >> m;
     for(int i = 0; i < m;i ++) {
