@@ -18,6 +18,7 @@ using PII = pair<int, int>;
 
 using LL = long long;
 
+const int MOD = 998244353;
 void solve() {
     int n, m = 0;
     cin >> n;
@@ -27,21 +28,22 @@ void solve() {
         m += p[i];
     }
     sort(p.begin() + 1, p.end());
-    vector<int> dp(m + 1);
+    vector<int> dp(m + 10);
     dp[0] = 1;
     LL res = 0;
     for(int i = 1; i <= n;i ++) {
         for(int j = 0;j <= m;j ++) {
-            if(p[i] > j)
+            if(p[i] >= j)
                 res += dp[j] * p[i];
             else 
                 res += dp[j] * ((p[i] + j + 1) / 2);
+            res %= MOD;
         }
-        for(int j = m; j >= dp[i]; j--) {
-            dp[j] += dp[j - dp[i]];
+        for(int j = m; j >= p[i]; j--) {
+            dp[j] += dp[j - p[i]];
         }
     }
-    cout << res << endl;
+    cout << res % MOD << endl;
 }
 
 signed main() {
