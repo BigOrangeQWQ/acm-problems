@@ -55,12 +55,15 @@ int main(){
     for(int i = 1; i <=cnt; i++)
         sort(scc[i].begin(), scc[i].end());
 
-    for(int i = 1;i <= n ;i++) {
+    // for(int i = 1; i <= n; i ++) 
+    //     cout << col[i] << ' ';
+    for(int i = 1; i <= n ;i++) {
         if(scc[col[i]].size()) {
-            for(auto v: scc[i]) {
+            for(auto v: scc[col[i]]) {
                 cout << v << ' ';
             }
             cout << endl;
+            scc[col[i]].clear();
         } 
     }
 }

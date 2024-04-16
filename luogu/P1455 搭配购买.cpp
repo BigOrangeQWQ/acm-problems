@@ -16,9 +16,23 @@ using namespace std;
 
 using PII = pair<int, int>;
 
-using LL = long long;
+using LL = long long; 
+
+const int N = 1e5 + 10;
+int p[N], cst[N], res[N];
+
+void find() {
+
+}
 
 void solve() {
+    int n, m, w;
+    cin >> n >> m >> w;
+    for(int i = 1; i <= n;i ++) {
+        cin >> cst[i] >> res[i];
+        p[i] = i;
+    }
+
     
 }
 
