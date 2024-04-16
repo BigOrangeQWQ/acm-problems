@@ -21,24 +21,30 @@ using LL = long long;
 void solve() {
     int n;
     cin >> n;
-    vector<int> p(n);
-    for(int i = 0; i < n; i ++) {
+    vector<int> p(n + 1), pos;
+    p[0] = 0;
+    for(int i = 1; i <= n ;i ++) 
         cin >> p[i];
-    }
-    int loc1= 9999999, loc2 = 9999999;
-    for(int i = n - 1;i >= 0; i--) {
-        if(p[i] != p[0]) 
-            loc1 = i;
-    }
-    for(int i = 0; i < n;i ++) {
-        if(p[i] != p[n - 1])
-            loc2 = i;
-    }
-    // cout << loc1 << ' ' <<  loc2 << endl;
-    if(loc1 == loc2 && loc1 == 9999999) 
+    vector<int> eq(n + 1, p[1]);
+    eq[0] = 0;
+    if(p == eq) {
         cout << -1 << endl;
-    else 
-        cout << min(loc1, loc2) << endl;
+        return;
+    }
+
+    pos.push_back(0);
+    for(int i = 1; i <= n;i ++) {
+        if(p[1] != p[i]) {
+            pos.push_back(i);
+        }
+    }
+    pos.push_back(n + 1);
+    int res = 1e9 + 10;
+    for(int i = 0; i < pos.size() - 1; i++) {
+        //cout << pos[i + 1] << ' ' << pos[i] << endl;
+        res = min(res, pos[i + 1] - pos[i] - 1);
+    }
+    cout << res << endl;
 }
 
 signed main() {

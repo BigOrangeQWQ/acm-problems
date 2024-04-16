@@ -34,6 +34,15 @@ void solve() {
         cout << "NO" << endl;
 }
 
+void solve2() {
+    int n, m, k;
+    cin >> n >>m >> k;
+    if((n + m - 1) / m + k >= n)
+        cout << "NO" << endl;
+    else 
+        cout << "YES" << endl;
+}
+
 signed main() {
     int T;cin >> T;
     // int T = 1;
