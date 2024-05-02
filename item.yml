@@ -1,0 +1,17 @@
+item_id:
+  type: command_block
+  name: "test_item"
+  enchant:
+    - id: 1
+      level: 1
+    - id: 3
+      level: 2
+  job: "战"
+  attribute:
+    - 百分比攻击力: 10
+    - 生命值: 100
+  unbreakable: true
+  hideflags: 63
+  lore:
+    - "&3This is a test item"
+    - "It does nothing"

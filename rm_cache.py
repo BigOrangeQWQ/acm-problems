@@ -9,7 +9,7 @@ def rm_cache(path: Path):
         if file.is_dir():
             rm_cache(file)
         elif file.suffix == ".bin" or file.suffix == ".exe":
-            print(f"Delete {file}")
+            print(f"Delete '{file}'")
             file.unlink()
 
 if __name__ == "__main__":

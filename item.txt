@@ -1,0 +1,14 @@
+give @p omg 1 1 
+{ench:[{id:1,lvl:1},],display:{Name:"§omg",Lore:["§9稀有度：★★★",
+"§6限制職業：[戰]",
+"§7箭矢强度 1",
+"§7阵法强度 1",
+"§7阵法强度 1",
+]},
+HideFlags:61,
+Unbreakable:1,AttributeModifiers:[{Operation:0,UUIDLeast:401,UUIDMost:401,Amount:10.000000,AttributeName:generic.attackDamage,Name:基础伤害},
+{Operation:1,UUIDLeast:402,UUIDMost:402,Amount:10.000000,AttributeName:generic.attackDamage,Name:百分伤害},
+{Operation:0,UUIDLeast:403,UUIDMost:403,Amount:10.000000,AttributeName:generic.maxHealth,Name:基础生命},
+{Operation:1,UUIDLeast:404,UUIDMost:404,Amount:10.000000,AttributeName:generic.maxHealth,Name:百分生命},
+{Operation:0,UUIDLeast:405,UUIDMost:405,Amount:10.000000,AttributeName:generic.knockbackResistance,Name:击退抗性},
+{Operation:1,UUIDLeast:406,UUIDMost:406,Amount:10.000000,AttributeName:generic.movementSpeed,Name:移动速度}]}
