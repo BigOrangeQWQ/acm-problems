@@ -4,31 +4,34 @@
 using namespace std;
 
 void solve() {
-    string v; cin >> v;
-    v = " " + v + "0";
-    int n = v.length() - 1;
-    int res = 0;
-    // cout << 111 << endl;
-    for(int l = 1, r = 0; l <= n;l ++) {
-        if(v[l] == '1') {
-            r = max(l, r);
-            for(; v[r] != '0' && r <= n; r ++);
-            if(r == n)
-                break;
-            res += r - l + 1;
-            swap(v[r], v[l]);
-        }
+  string v;
+  cin >> v;
+  v = " " + v + "0";
+  int n = v.length() - 1;
+  int res = 0;
+  // cout << 111 << endl;
+  for (int l = 1, r = 0; l <= n; l++) {
+    if (v[l] == '1') {
+      r = max(l, r);
+      for (; v[r] != '0' && r <= n; r++)
+        ;
+      if (r == n)
+        break;
+      res += r - l + 1;
+      swap(v[r], v[l]);
     }
-    cout << res << endl;
+  }
+  cout << res << endl;
 }
 
 signed main() {
-    int T;cin >> T;
-    while(T--)
-        solve();
+  int T;
+  cin >> T;
+  while (T--)
+    solve();
 }
 
-// 11000 
+// 11000
 // 10001 [5 - 2]
 
 // 11000 [12]
@@ -47,6 +50,5 @@ signed main() {
 // 00111011
 // 00011111
 
-
-//01101001
-//00111001 3 + 4 * 2 
+// 01101001
+// 00111001 3 + 4 * 2

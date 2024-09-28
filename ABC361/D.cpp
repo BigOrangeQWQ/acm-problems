@@ -1,10 +1,11 @@
-#include <algorithm>
-#include <deque>
 #include <iostream>
-#include <map>
-#include <queue>
-#include <set>
+#include <algorithm>
 #include <vector>
+#include <queue>
+#include <map>
+#include <set>
+#include <map>
+#include <deque>
 
 using namespace std;
 
@@ -17,15 +18,14 @@ using PII = pair<int, int>;
 
 using LL = long long;
 
-void solve() {}
+void solve() {
+    
+}
 
-signed main()
-{
-    int T;
-    cin >> T;
+signed main() {
+    int T;cin >> T;
     // int T = 1;
-    while (T-- > 0)
-    {
+    while(T --> 0) {
         solve();
     }
 }

@@ -1,0 +1,18 @@
+BasedOnStyle: Google
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+BreakBeforeBraces: Attach
+AllowShortFunctionsOnASingleLine: All
+ColumnLimit: 110
+SortIncludes: true
+IncludeBlocks: Preserve
+BraceWrapping:
+  AfterControlStatement: false
+  AfterFunction: false
+  AfterEnum: false
+  AfterStruct: false
+  AfterClass: false
+  BeforeCatch: false
+  BeforeElse: false
+  IndentBraces: false
