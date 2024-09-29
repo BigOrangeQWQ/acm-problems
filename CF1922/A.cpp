@@ -19,7 +19,20 @@ using PII = pair<int, int>;
 using LL = long long;
 
 void solve() {
-    
+    int n; cin >> n;
+    string a, b, c, t;
+    cin >> a >> b >> c;
+    for(int i = 0 ; i < n; i ++) {
+        if(c[i] != a[i] && c[i] != b[i]) {
+            cout << "YES" << endl;
+            return;
+        }
+        if(a[i] == b[i] && b[i] != a[i]) {
+            cout << "YES" << endl;
+            return;
+        }
+    }
+    cout << "NO" << endl;
 }
 
 signed main() {

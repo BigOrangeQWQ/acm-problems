@@ -19,7 +19,12 @@ using PII = pair<int, int>;
 using LL = long long;
 
 void solve() {
-    
+    int n;cin >> n;
+    int cnt = 0;
+    if(n <= 4)
+        cout << "Bob" << endl;
+    else 
+        cout << "Alice" << endl;
 }
 
 signed main() {
@@ -29,3 +34,16 @@ signed main() {
         solve();
     }
 }
+
+// 1 1 1 1 1
+// 2 1 1 1 A
+// 2 2 1 B
+// 4 1 A
+
+// 1 1 1 1
+// 2 1 1 A
+// 2 2 B
+// 
+
+// 1 1 1 1 1 1
+// 

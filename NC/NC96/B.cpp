@@ -23,8 +23,8 @@ void solve() {
 }
 
 signed main() {
-    int T;cin >> T;
-    // int T = 1;
+    // int T;cin >> T;
+    int T = 1;
     while(T --> 0) {
         solve();
     }

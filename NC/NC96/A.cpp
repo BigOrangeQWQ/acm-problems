@@ -19,12 +19,16 @@ using PII = pair<int, int>;
 using LL = long long;
 
 void solve() {
-    
+    int x;
+    cin >> x;
+    cout << x * 8 << endl; 
 }
 
 signed main() {
-    int T;cin >> T;
-    // int T = 1;
+    ios::sync_with_stdio (false);
+    cin.tie(nullptr);
+    // int T;cin >> T;
+    int T = 1;
     while(T --> 0) {
         solve();
     }

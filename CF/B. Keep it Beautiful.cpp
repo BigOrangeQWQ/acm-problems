@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+#include <bitset>
 #include <vector>
 #include <queue>
 #include <map>
@@ -18,8 +19,17 @@ using PII = pair<int, int>;
 
 using LL = long long;
 
+bitset<(int)2e5> q;
+
+
+
 void solve() {
-    
+    int n;cin >> n;
+    int last;
+
+    for(int i = 1; i <= n; i++) {
+        int v;cin >> last;
+    }
 }
 
 signed main() {
